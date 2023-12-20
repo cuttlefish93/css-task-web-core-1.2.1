@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iintoo - invest together</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="vendors/normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<main class="content">
+		<div class="content__img">
+			<a href="./index.html" class="logo">
+				<img src="images/logo.svg" alt="Company logo">
+			</a>
+		</div>
+
+		<div class="content__info">
+			<h1 class="content__title">Get iintoo it today</h1>
+			<p class="content__desc">There is no charge or obligation upon registration.</p>
+			<div class="register-links">
+				<a href="https://www.facebook.com/" class="register-link register-link--fb">Register with Facebook</a>
+				<a href="https://linkedin.com/" class="register-link register-link--in">Register with LinkedIn</a>
+			</div>
+			<div class="content__divider">or</div>
+			<form action="" class="new-account-form">
+				<div class="new-account-form__row">
+					<div class="new-account-form__elem">
+						<label for="email">Email</label>
+						<input type="email" id='email' name='email'>
+					</div>
+					<div class="new-account-form__elem">
+						<label for="phone">Phone</label>
+						<input type="phone" id='phone' name='phone'>
+					</div>
+				</div>
+
+				<div class="new-account-form__type">
+					<h2 class="new-account-form__title">What type of investor are you?</h2>
+					<p class="new-account-form__info">Select the type of investor you are below</p>
+					<div class="new-account-form__type-row">
+						<label for="individual" class="new-account-form__type-btn new-account-form__type-btn--individual">
+							<input type="radio" id='individual' name='investor-type' value='individual' checked>
+							<span class="radio-icon"></span>
+							<p>Individual</p>
+							<span class="info-sign"></span>
+							<p class="tooltip">
+								I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common
+							</p>
+						</label>
+
+						<label for="business" class="new-account-form__type-btn new-account-form__type-btn--business">
+							<input type="radio" id='business' name='investor-type' value='business'>
+							<span class="radio-icon"></span>
+							<p>Business</p>
+							<span class="info-sign"></span>
+							<p class="tooltip">
+								I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common
+							</p>
+						</label>
+
+						<label for="ira" class="new-account-form__type-btn new-account-form__type-btn--ira">
+							<input type="radio" id='ira' name='investor-type' value='ira'>
+							<span class="radio-icon"></span>
+							<p>IRA</p>
+							<span class="info-sign"></span>
+							<p class="tooltip tooltip--left">
+								I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common
+							</p>
+						</label>
+
+						<label for="trust" class="new-account-form__type-btn new-account-form__type-btn--trust">
+							<input type="radio" id='trust' name='investor-type' value='trust'>
+							<span class="radio-icon"></span>
+							<p>Trust</p>
+							<span class="info-sign"></span>
+							<p class="tooltip tooltip--left">
+								I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common
+							</p>
+						</label>
+					</div>
+				</div>
+
+				<label for="terms" class="new-account-form__terms">
+					<input type="checkbox" id='terms' name='terms'>
+					<span class="check-icon"></span>
+					I agree to the terms and receiving notifications from iintoo
+					<a href="#">View full terms</a>
+				</label>
+
+				<button class="new-account-form__btn" type='submit'>Create Account</button>
+			</form>
+		</div>
+	</main>
+</body>
+
+</html>
